@@ -1,0 +1,29 @@
+<html>
+<head>
+<script src="flowplayer-3.2.4.min.js"></script>
+<script language="JavaScript">
+
+
+
+function triggerFlow(idVar)
+{
+
+if ( typeof(flowplayer) != 'undefined') {
+	$f(
+		idVar, 
+		"flow.swf", 
+		"http://vod01.netdna.com/vod/demo.flowplayer/flowplayer-960.mp4"
+	);
+  }
+}
+
+</script>
+
+</head>
+<body>
+example.html
+<div style="width:320px;height:240px; background-color: #FF00FF;" id="N1" onClick="triggerFlow('N1')"></div>
+<div style="width:320px;height:240px; background-color: #0000FF;" id="N2" onClick="triggerFlow('N2')"></div>
+<div style="width:320px;height:240px; background-color: #FF00FF;" id="N3" onClick="triggerFlow('N3')"></div>
+</body>
+</html>
